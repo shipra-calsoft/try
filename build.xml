@@ -11,7 +11,7 @@
         	        	             includeantruntime="false"
         	        	             fork="true" debug="on">
         	<classpath>
-        	    		<pathelement  path="C:\jUnit\junit-4.10.jar"/>
+        	    		<pathelement  path="try/junit-4.10.jar"/>
         	    	</classpath>
     	</javac>
     	

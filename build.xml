@@ -1,4 +1,4 @@
-<project>
+<project default="makejar">
 
     <target name="clean">
         <delete dir="build"/>
@@ -11,13 +11,13 @@
         	        	             includeantruntime="false"
         	        	             fork="true" debug="on">
         	<classpath>
-        	    		<pathelement  path="try/junit-4.10.jar"/>
+        	    		<pathelement  path="lib/junit-4.10.jar"/>
         	    	</classpath>
     	</javac>
     	
     </target>
 
-    <target name="jar">
+    <target name="makejar" depends="compile">
         <mkdir dir="build/jar"/>
         <jar destfile="build/jar/Math.jar" basedir="build/classes">
         

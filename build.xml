@@ -6,7 +6,7 @@
 
     <target name="compile">
         <mkdir dir="build/classes"/>
-        <javac srcdir="src" destdir="build/classes"
+        <javac srcdir="." destdir="build/classes"
         	target="1.7"  source="1.7"
         	        	             includeantruntime="false"
         	        	             fork="true" debug="on">
